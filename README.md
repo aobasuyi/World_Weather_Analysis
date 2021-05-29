@@ -4,7 +4,7 @@ Performing analysis on a travel company data
 ## Overview of the analysis
 The head of analysis of a top travel technology company that specializes in the hotel and lodging industry will be assisted with analyzing the company data in order to recommned the best cities for vacation anywhere in the world based on clients weather criteria/preferences. The analysis was performed using Jupyter Notebook, Pandas Library, CityPy Module, APIs and JSON Traversals.<br />
 
-The three technical analyses and the project deliverables are <br />
+The three technical analyses and the project deliverables: <br />
 
 1. Retrieve Weather Data
     - Generate a set of 2,000 random latitudes and longitudes.
@@ -34,7 +34,7 @@ The three technical analyses and the project deliverables are <br />
 
 A.  **Retrieve Weather Data** <br />
 
-Code to create a list holding the new cities weather: <br />
+Code to create *a list* to hold the random world cities weather: <br />
 
 ```
 # Import the dependencies.
@@ -88,6 +88,7 @@ from config import g_key
 # Configure gmaps API key
 gmaps.configure(api_key=g_key)
 
+#Read csv file
 weather_data_df = pd.read_csv("File.csv")
 weather_data_df.head()
 
@@ -129,7 +130,7 @@ locations = clean_hotel_df[["Lat", "Lng"]]
 
 
 C.  **Create a Vacation Itinerary Map** br />
-T0 create a travel itenarary: <br />
+T0 create a travel itenarary based on client's weather criteria: <br />
 
 ```
 # Dependencies and Setup
